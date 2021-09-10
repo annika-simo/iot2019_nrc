@@ -2,11 +2,13 @@ import time
 import serial
 import smtplib
 
-TO = 'asimovart7@gmail.com'
-GMAIL_USER = 'asimovart7@gmail.com'
-GMAIL_PASS = 'jongosi7'
+TO = '[insert email recipient]'
+GMAIL_USER = '[insert email]'
+GMAIL_PASS = '[insert password]'
 SUBJECT = 'Chicken pot.py'
 TEXT = 'Look it worked :)'
+  
+'''make sure to change privacy settings on a gmail. google will block the arduino from logging into your email'''
   
 ser = serial.Serial('/dev/cu.usbmodem14201', 9600)
 
